@@ -7,6 +7,6 @@ include_recipe 'redisio::enable'
 include_recipe 'redisio::sentinel'
 include_recipe 'redisio::sentinel_enable'
 
-service 'redis_sentinel_#{node[:redisio][:sentinels][0][:name]}'
+service "redis_sentinel_#{node[:redisio][:sentinels][0][:name]}"
   action [ :enable, :start ]
 end
