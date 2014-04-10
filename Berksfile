@@ -1,7 +1,7 @@
 site :opscode
 
 cookbook 'apt'
-cookbook 'build-essential'
+cookbook 'build-essential', '= 1.4.2'
 
 cookbook 'redisio',
   :git => 'https://github.com/brianbianco/redisio.git'
